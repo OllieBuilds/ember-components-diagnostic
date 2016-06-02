@@ -5,20 +5,20 @@ Record your responses inside the fenced code blocks below each question.
 1.  Give an example of a visual hierarchy that could be modeled with components.
 
     ```md
-    <!-- your response here -->
+    A list of lists.
     ```
 
 1.  What is the command to generate a new component called '`my-map`'?
 
     ```sh
-    # your response here
+    ember g componenet my-map
     ```
 
 1.  What files are edited to produce a component, and what are their
     responsibilities?
 
     ```md
-    <!-- your response here -->
+    a component directory is created containing 'my-map' inside which is a component.js file as well as a template.hbs
     ```
 
 1.  Suppose you have a component '`my-contact`', which is loaded from
@@ -26,7 +26,8 @@ Record your responses inside the fenced code blocks below each question.
     the syntax for loading this component inside that template?
 
     ```html
-    <!-- your response here -->
+    {{#each model as |contact|}}
+    {{/each}}
     ```
 
     Each contact has multiple phone numbers. Suppose you also have '`my-phone`'
@@ -35,5 +36,5 @@ Record your responses inside the fenced code blocks below each question.
     pass it data?
 
     ```html
-    <!-- your response here -->
+    {{my-contact.my-phone}}
     ```
